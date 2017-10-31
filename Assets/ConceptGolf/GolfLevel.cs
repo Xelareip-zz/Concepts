@@ -41,8 +41,11 @@ public class GolfLevel : MonoBehaviour
 		levelScore = 0;
 		GolfBall.Instance.transform.position = startPos.position;
 		Rigidbody ballRig = GolfBall.Instance.GetComponent<Rigidbody>();
-		ballRig.velocity = Vector3.zero;
-		ballRig.angularVelocity = Vector3.zero;
+		if (GolfLevelManager.Instance.resetSpeed)
+		{
+			ballRig.velocity = Vector3.zero;
+			ballRig.angularVelocity = Vector3.zero;
+		}
     }
 
 	private void HolePassed()

@@ -38,3 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GolfScene.unity
     guid: f2883aa8045ab254cbcf69b5a77149d0
+  - enabled: 1
+    path: Assets/Scenes/GolfTouchScene.unity
+    guid: 922a1da33189bcc46b1290de47e1effa

@@ -98,6 +98,7 @@ public class GolfPlayer : MonoBehaviour
 		}
 
 		Vector3 shootVector = (dragStart - currentDrag) * shootMultiplier;
+		shootVector.y = 0.0f;
 
 		if (canShoot && shootVector.magnitude > shootDistanceBounds.x)
 		{
